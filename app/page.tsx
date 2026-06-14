@@ -107,11 +107,6 @@ export default function Page() {
         {ORDERED.map((id) => (
           <CategorySection key={id} id={id} lang={lang} />
         ))}
-
-        <div className="disclaimer">
-          <b>i</b>
-          <span>{UI.disclaimer[lang]}</span>
-        </div>
       </section>
 
       <footer className="foot">

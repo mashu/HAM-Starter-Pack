@@ -101,12 +101,12 @@ export const GEAR: GearItem[] = [
     category: "operation",
     image: "https://i.imgur.com/xAlNaTa.png",
     url: "https://pl.aliexpress.com/item/1005009303359579.html",
-    pricePln: 85,
+    pricePln: 208,
     weightG: 70,
     estimate: true,
     purpose: {
-      pl: "Kompaktowy klucz iambic (dwudźwigniowy) do nadawania alfabetem Morse'a. Mały i lekki na tyle, by na stałe mieszkać w zestawie — zawsze gotowy do wywołania CQ.",
-      en: "A compact iambic (dual-lever) paddle for sending Morse. Small and light enough to live in the kit permanently, so you are always ready to call CQ.",
+      pl: "Kompaktowy klucz iambic (dwudźwigniowy) do nadawania alfabetem Morse'a. Mały i lekki na tyle, by na stałe mieszkać w zestawie.",
+      en: "A compact iambic (dual-lever) paddle for sending Morse. Small and light enough to live in the kit permanently.",
     },
   },
 
@@ -122,8 +122,8 @@ export const GEAR: GearItem[] = [
     weightG: 30,
     estimate: true,
     purpose: {
-      pl: "Rdzeń ferrytowy Amidon, materiał typu 43. Nawiniesz na nim transformator 49:1 (unun) do zasilania anteny EFHW — sztandarowej anteny portable, która nie wymaga tunera i prawie nie potrzebuje przeciwwagi.",
-      en: "An Amidon type-43 ferrite toroid. Wind a 49:1 UnUn on it to feed an End-Fed Half-Wave (EFHW) — the go-to portable antenna that needs no tuner and minimal counterpoise.",
+      pl: "Rdzeń ferrytowy Amidon, materiał typu 43. Nawiniesz na nim transformator 49:1 (unun) do zasilania anteny EFHW — sztandarowej anteny portable, która nie wymaga tunera.",
+      en: "An Amidon type-43 ferrite toroid. Wind a 49:1 UnUn on it to feed an End-Fed Half-Wave (EFHW) — the go-to portable antenna that needs no tuner.",
     },
   },
   {
@@ -141,6 +141,20 @@ export const GEAR: GearItem[] = [
     },
   },
   {
+    id: "radiator-wire",
+    name: { pl: "Drut promiennika 0,5 mm² (LGY)", en: "Radiator wire 0.5 mm² (LGY)" },
+    category: "antenna",
+    image: "https://i.imgur.com/4Ak6rZ1.png",
+    url: "https://www.speckable.pl/pl/product/30653,kabel-instalacyjny-lgy-h05v-k-0-5mm2-jednozylowy-zolty-300-500v-gietki-linka-elektrokabel",
+    pricePln: 53,
+    weightG: 600,
+    estimate: true,
+    purpose: {
+      pl: "Jednożyłowy kabel instalacyjny LGY H05V-K 0,5 mm² — typowy drut na promienniki i elementy anten rezonansowych. Fabryczna długość 100 m za 53 zł wystarczy na wiele kolejnych anten.",
+      en: "Single-core LGY H05V-K 0.5 mm² install wire — standard material for dipole legs and other resonant antenna elements. A 100 m factory cut for 53 PLN gives you plenty for many antennas to come.",
+    },
+  },
+  {
     id: "bnc-post",
     name: { pl: "Adapter zaciskowy na BNC", en: "BNC binding-post adapter" },
     category: "antenna",
@@ -150,8 +164,8 @@ export const GEAR: GearItem[] = [
     weightG: 20,
     estimate: true,
     purpose: {
-      pl: "Adapter z zaciskami na BNC. Pozwala podłączyć goły drut antenowy i przeciwwagę bezpośrednio do gniazda BNC w radiu — idealny do szybkiego rozłożenia anteny random-wire lub EFHW w terenie.",
-      en: "Binding-post-to-BNC adapter. Clamp a bare antenna wire and a counterpoise straight onto the rig's BNC socket — perfect for quick random-wire or EFHW deployments in the field.",
+      pl: "Adapter z zaciskami na BNC. Podłącza goły drut antenowy i przeciwwagę bezpośrednio do gniazda BNC w radiu — wygodny do szybkiego rozłożenia dipola w terenie; może też posłużyć przy budowie anteny EFHW.",
+      en: "Binding-post-to-BNC adapter. Clamps a bare antenna wire and counterpoise straight onto the rig's BNC socket — handy for quick dipole deployments in the field; can also help when building an EFHW.",
     },
   },
 
@@ -209,8 +223,8 @@ export const GEAR: GearItem[] = [
     weightG: 110,
     estimate: true,
     purpose: {
-      pl: "Cienki, lekki kabel koncentryczny 50 Ω. Ma większe tłumienie niż grubsze kable, ale waży ułamek tego — idealny na krótkie przelotki i lekkie fidery w wyprawach portable.",
-      en: "Thin, lightweight 50 Ω coax. Higher loss than thicker cable but a fraction of the weight — the right choice for short jumpers and grams-count portable feedlines.",
+      pl: "Cienki, lekki kabel koncentryczny 50 Ω — głównie do nawinięcia baluna 1:1 (choke); dlatego ma być cienki i elastyczny. Ma większe tłumienie niż grubsze kable, ale waży ułamek tego; nadaje się też na krótkie przelotki w terenie.",
+      en: "Thin, lightweight 50 Ω coax — mainly for winding a 1:1 choke balun, which is why you want it thin and flexible. Higher loss than thicker cable but a fraction of the weight; also fine for short field jumpers.",
     },
   },
   {
@@ -268,8 +282,8 @@ export const GEAR: GearItem[] = [
     weightG: 120,
     estimate: true,
     purpose: {
-      pl: "Kieszonkowy analizator wektorowy z 4-calowym ekranem. Zmierzy SWR, impedancję i rezonans; pozwoli dostroić antenę i unun; sprawdzi kable i złącza. Najbardziej przydatny przyrząd przy pracy z antenami.",
-      en: "A pocket vector network analyzer with a 4-inch screen. Measure SWR, impedance and resonance; tune your antenna and UnUn; check cables and connectors. The single most useful instrument for antenna work.",
+      pl: "Kieszonkowy analizator wektorowy z 4-calowym ekranem. Sprawdzi, czy antena jest w rezonansie i ma dołek SWR; zmierzy indukcyjność cewki; zmierzy tłumienie baluna 1:1 (choke). Do ciągłości połączeń służy miernik z brzeczykiem.",
+      en: "A pocket vector network analyzer with a 4-inch screen. Check whether an antenna is in resonance and shows an SWR dip; measure coil inductance; measure 1:1 choke balun loss. Use a beeping multimeter for continuity checks.",
     },
   },
   {
@@ -283,8 +297,8 @@ export const GEAR: GearItem[] = [
     estimate: true,
     note: { pl: "Doprecyzuj, co to dokładnie jest", en: "Confirm exactly which board this is" },
     purpose: {
-      pl: "Płytka do prób warsztatowych — sprawdzanie podzespołów i prototypowanie połączeń przed lutowaniem. Przydatna do weryfikacji nawiniętego ununa lub złącza, zanim trafi w teren.",
-      en: "A bench test board for checking components and prototyping connections before you commit to soldering — handy for verifying a UnUn winding or a connector before it goes into the field.",
+      pl: "Płytka do prób warsztatowych — sprawdzanie podzespołów i prototypowanie połączeń przed lutowaniem.",
+      en: "A bench test board for checking components and prototyping connections before you commit to soldering.",
     },
   },
 
@@ -299,8 +313,8 @@ export const GEAR: GearItem[] = [
     weightG: 170,
     estimate: true,
     purpose: {
-      pl: "Ogniwa litowo-żelazowo-fosforanowe (LiFePO4) w rozmiarze 18650. Cztery w szeregu dają czyste, stabilne ~12,8 V — idealne zasilanie dla QMX+, przy bezpieczniejszej chemii i płaskiej krzywej rozładowania.",
-      en: "Lithium iron phosphate cells in the 18650 size. Four in series give a clean, stable ~12.8 V — the ideal supply for the QMX+, with a safer chemistry and a flat discharge curve.",
+      pl: "Ogniwa litowo-żelazowo-fosforanowe (LiFePO4) w rozmiarze 18650 — ok. 3,6 V na ogniwo po naładowaniu. Trzy w szeregu dają maks. ~10,8 V, co mieści się w zakresie QMX+ (6–12 V); z nowszym firmware radio akceptuje do 14 V, więc możliwy też pakiet 4S (~14,4 V). Bezpieczniejsza chemia i płaska krzywa rozładowania.",
+      en: "LiFePO4 cells in the 18650 size — about 3.6 V per cell when fully charged. Three in series give up to ~10.8 V, which fits the QMX+ supply range (6–12 V); with newer firmware the rig accepts up to 14 V, so a 4S pack (~14.4 V) is also an option. Safer chemistry and a flat discharge curve.",
     },
   },
   {

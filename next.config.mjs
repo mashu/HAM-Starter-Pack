@@ -9,14 +9,8 @@ const nextConfig = {
   // Cosmetic: emit /page/index.html style folders so it works on any static host.
   trailingSlash: true,
 
-  // Fonts are loaded with a plain <link> in app/layout.tsx, so we don't want
-  // Next to try to inline them from fonts.googleapis.com at build time.
-  optimizeFonts: false,
-
-  // ── Deploying to GitHub Pages under https://<user>.github.io/<repo>/ ? ──
-  // Uncomment and set to your repo name, then rebuild:
-  // basePath: "/ham-starter-pack",
-  // assetPrefix: "/ham-starter-pack/",
+  basePath: "/HAM-Starter-Pack",
+  assetPrefix: "/HAM-Starter-Pack/",
 };
 
 export default nextConfig;

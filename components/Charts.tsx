@@ -14,6 +14,7 @@ import {
   ZAxis,
   CartesianGrid,
   Tooltip,
+  type PieSectorShapeProps,
 } from "recharts";
 import {
   GEAR,
@@ -105,6 +106,7 @@ export default function Charts({ lang }: { lang: Lang }) {
           <div className="donut-wrap">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
+                <Tooltip content={() => null} />
                 <Pie
                   data={donutData}
                   dataKey="value"
@@ -113,8 +115,7 @@ export default function Charts({ lang }: { lang: Lang }) {
                   outerRadius="86%"
                   paddingAngle={2}
                   stroke="none"
-                  activeIndex={active ?? undefined}
-                  activeShape={renderActiveShape}
+                  shape={renderPieSector}
                   onMouseEnter={(_, i) => setActive(i)}
                   onMouseLeave={() => setActive(null)}
                   isAnimationActive={false}
@@ -196,8 +197,24 @@ export default function Charts({ lang }: { lang: Lang }) {
   );
 }
 
-function renderActiveShape(props: any) {
-  const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
+function renderPieSector(props: PieSectorShapeProps) {
+  const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill, isActive } = props;
+  const color = fill ?? "var(--text)";
+
+  if (!isActive) {
+    return (
+      <Sector
+        cx={cx}
+        cy={cy}
+        innerRadius={innerRadius}
+        outerRadius={outerRadius}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        fill={color}
+      />
+    );
+  }
+
   return (
     <g>
       <Sector
@@ -207,7 +224,7 @@ function renderActiveShape(props: any) {
         outerRadius={outerRadius + 7}
         startAngle={startAngle}
         endAngle={endAngle}
-        fill={fill}
+        fill={color}
       />
       <Sector
         cx={cx}
@@ -216,7 +233,7 @@ function renderActiveShape(props: any) {
         outerRadius={outerRadius + 12}
         startAngle={startAngle}
         endAngle={endAngle}
-        fill={fill}
+        fill={color}
         opacity={0.5}
       />
     </g>

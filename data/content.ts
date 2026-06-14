@@ -33,10 +33,6 @@ export const UI: Record<string, Bi> = {
   viewItem: { pl: "Zobacz produkt", en: "View item" },
   estimateTag: { pl: "szacunek", en: "estimate" },
 
-  disclaimer: {
-    pl: "Ceny i masy to wstępne szacunki (LighterPack nie zawierał danych). Wpisz rzeczywiste wartości w pliku data/gear.ts — totale i wykresy przeliczą się same.",
-    en: "Prices and weights are starting estimates (the LighterPack list had none). Edit data/gear.ts with the real figures — totals and charts recompute on their own.",
-  },
   sourceLabel: { pl: "Lista źródłowa", en: "Source list" },
   footer: {
     pl: "Zestawione dla początkujących operatorów. Powodzenia w eterze — 73!",
