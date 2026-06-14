@@ -1,12 +1,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  HAM Starter Pack — single source of truth
 //
-//  Source list:  https://lighterpack.com/r/3qyzhy
-//
-//  NOTE: the LighterPack export contains NO weights or prices (every field is 0),
-//  so the numbers below are *starting estimates*. Replace `pricePln` and `weightG`
-//  with the real figures from your suppliers — everything on the site (totals,
-//  charts, sort order) recomputes automatically.
+//  Edit `pricePln` and `weightG` with real figures from your suppliers —
+//  totals, charts and sort order recompute automatically.
 //
 //  Currency is Polish złoty (PLN) to match the AliExpress / sp2fp links.
 //  To switch currency, change CURRENCY below and convert the pricePln values.

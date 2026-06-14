@@ -33,7 +33,6 @@ export const UI: Record<string, Bi> = {
   viewItem: { pl: "Zobacz produkt", en: "View item" },
   estimateTag: { pl: "szacunek", en: "estimate" },
 
-  sourceLabel: { pl: "Lista źródłowa", en: "Source list" },
   footer: {
     pl: "Zestawione dla początkujących operatorów. Powodzenia w eterze — 73!",
     en: "Compiled for new operators. Good luck on the air — 73!",

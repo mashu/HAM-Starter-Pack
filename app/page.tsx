@@ -112,12 +112,6 @@ export default function Page() {
       <footer className="foot">
         <div className="wrap foot__inner">
           <span>{UI.footer[lang]}</span>
-          <span>
-            {UI.sourceLabel[lang]}:{" "}
-            <a href="https://lighterpack.com/r/3qyzhy" target="_blank" rel="noopener noreferrer">
-              lighterpack.com/r/3qyzhy
-            </a>
-          </span>
         </div>
       </footer>
     </>
