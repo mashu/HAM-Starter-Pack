@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+
+const repoBase = "/HAM-Starter-Pack";
+const isDev = process.env.NODE_ENV === "development";
+
 const nextConfig = {
   // Produces a fully static site in ./out (run `npm run build`).
   output: "export",
@@ -9,8 +13,11 @@ const nextConfig = {
   // Cosmetic: emit /page/index.html style folders so it works on any static host.
   trailingSlash: true,
 
-  basePath: "/HAM-Starter-Pack",
-  assetPrefix: "/HAM-Starter-Pack/",
+  // GitHub Pages only — skip in dev so http://localhost:3000/ works directly.
+  ...(isDev ? {} : { basePath: repoBase, assetPrefix: `${repoBase}/` }),
+
+  // Allow HMR when opening the dev server from another device on the LAN.
+  allowedDevOrigins: ["192.168.0.35"],
 };
 
 export default nextConfig;

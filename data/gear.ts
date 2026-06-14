@@ -144,14 +144,14 @@ export const GEAR: GearItem[] = [
     id: "radiator-wire",
     name: { pl: "Drut promiennika 0,5 mm² (LGY)", en: "Radiator wire 0.5 mm² (LGY)" },
     category: "antenna",
-    image: "https://i.imgur.com/4Ak6rZ1.png",
+    image: "https://i.imgur.com/UiTYI2i.png",
     url: "https://www.speckable.pl/pl/product/30653,kabel-instalacyjny-lgy-h05v-k-0-5mm2-jednozylowy-zolty-300-500v-gietki-linka-elektrokabel",
     pricePln: 53,
     weightG: 600,
     estimate: true,
     purpose: {
-      pl: "Jednożyłowy kabel instalacyjny LGY H05V-K 0,5 mm² — typowy drut na promienniki i elementy anten rezonansowych. Fabryczna długość 100 m za 53 zł wystarczy na wiele kolejnych anten.",
-      en: "Single-core LGY H05V-K 0.5 mm² install wire — standard material for dipole legs and other resonant antenna elements. A 100 m factory cut for 53 PLN gives you plenty for many antennas to come.",
+      pl: "Jednożyłowy, giętki kabel LGY H05V-K 0,5 mm² — materiał na promienniki anten rezonansowych. Kup fabryczny odcinek 100 m (53 zł) — wystarczy na wiele różnych anten.",
+      en: "Flexible single-core LGY H05V-K 0.5 mm² wire for resonant antenna radiators. Buy a 100 m factory cut (53 PLN) — enough for many different antennas.",
     },
   },
   {
