@@ -17,7 +17,7 @@ const ORDERED = (Object.keys(CATEGORIES) as CategoryId[]).sort(
 );
 
 export default function Page() {
-  const [lang, setLang] = useState<Lang>("pl");
+  const [lang, setLang] = useState<Lang>("en");
 
   const totals = useMemo(() => {
     const price = GEAR.reduce((s, g) => s + g.pricePln, 0);
