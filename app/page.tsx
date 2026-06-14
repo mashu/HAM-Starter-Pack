@@ -111,7 +111,8 @@ export default function Page() {
 
       <footer className="foot">
         <div className="wrap foot__inner">
-          <span>{UI.footer[lang]}</span>
+          <p>{UI.footer[lang]}</p>
+          <p className="foot__note">{UI.footerNote[lang]}</p>
         </div>
       </footer>
     </>

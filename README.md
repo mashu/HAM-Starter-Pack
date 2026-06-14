@@ -3,8 +3,6 @@
 A static, bilingual (PL/EN) website presenting a budget QRP/HF field kit for a new
 amateur radio operator. Built with Next.js (App Router, static export) + Recharts.
 
-Source list: https://lighterpack.com/r/3qyzhy
-
 ## Features
 
 - Items grouped: **Operation · Antenna · Connectivity · Measurements · Power**
@@ -27,10 +25,9 @@ npm run build    # static site exported to ./out
 
 ## Edit the data
 
-Everything lives in **`data/gear.ts`**. The LighterPack list had no weights or
-prices, so the figures there are *estimates* (marked `estimate: true`). Replace
-`pricePln` and `weightG` with real numbers — totals, charts and per-group sums all
-recompute automatically. UI strings are in `data/content.ts`.
+Everything lives in **`data/gear.ts`**. Replace `pricePln` and `weightG` with real
+numbers — totals, charts and per-group sums all recompute automatically. UI strings
+are in `data/content.ts`.
 
 To change currency, edit `CURRENCY` in `data/gear.ts` and convert the `pricePln`
 values.

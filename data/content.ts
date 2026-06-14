@@ -34,7 +34,11 @@ export const UI: Record<string, Bi> = {
   estimateTag: { pl: "szacunek", en: "estimate" },
 
   footer: {
-    pl: "Zestawione dla początkujących operatorów. Powodzenia w eterze — 73!",
-    en: "Compiled for new operators. Good luck on the air — 73!",
+    pl: "Zestawione dla początkujących operatorów — to moja prywatna propozycja listy (SO5KM). Powodzenia w eterze — 73!",
+    en: "Compiled for new operators — my personal starter-kit suggestion (SO5KM). Good luck on the air — 73!",
+  },
+  footerNote: {
+    pl: "Część mas (oznaczone ~) to szacunki — warto zweryfikować u sprzedawcy.",
+    en: "Some weights (marked ~) are estimates — worth verifying with your supplier.",
   },
 };
