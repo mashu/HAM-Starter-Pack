@@ -278,23 +278,22 @@ export const GEAR: GearItem[] = [
     weightG: 120,
     estimate: true,
     purpose: {
-      pl: "Kieszonkowy analizator wektorowy z 4-calowym ekranem. Sprawdzi, czy antena jest w rezonansie i ma dołek SWR; zmierzy indukcyjność cewki; zmierzy tłumienie baluna 1:1 (choke). Do ciągłości połączeń służy miernik z brzeczykiem.",
-      en: "A pocket vector network analyzer with a 4-inch screen. Check whether an antenna is in resonance and shows an SWR dip; measure coil inductance; measure 1:1 choke balun loss. Use a beeping multimeter for continuity checks.",
+      pl: "Kieszonkowy analizator wektorowy z 4-calowym ekranem. Sprawdzi, czy antena jest w rezonansie i ma dołek SWR; zmierzy indukcyjność cewki; zmierzy tłumienie baluna 1:1 (choke).",
+      en: "A pocket vector network analyzer with a 4-inch screen. Check whether an antenna is in resonance and shows an SWR dip; measure coil inductance; measure 1:1 choke balun loss.",
     },
   },
   {
     id: "test-board",
-    name: { pl: "Płytka testowa", en: "Test board" },
+    name: { pl: "Płytka pomiarowa", en: "Measurement board" },
     category: "measurements",
     image: "https://i.imgur.com/mAI0k3F.png",
     url: "https://pl.aliexpress.com/item/1005008833953441.html",
     pricePln: 20,
     weightG: 40,
     estimate: true,
-    note: { pl: "Doprecyzuj, co to dokładnie jest", en: "Confirm exactly which board this is" },
     purpose: {
-      pl: "Płytka do prób warsztatowych — sprawdzanie podzespołów i prototypowanie połączeń przed lutowaniem.",
-      en: "A bench test board for checking components and prototyping connections before you commit to soldering.",
+      pl: "Płytka do pomiarów — trzyma połączenia blisko siebie i omija problem długich, nieekranowanych przewodów, które pływają i zafałszowują wynik.",
+      en: "A measurement board — keeps connections short and local, avoiding long unshielded leads that float around and skew your readings.",
     },
   },
 
@@ -309,23 +308,22 @@ export const GEAR: GearItem[] = [
     weightG: 170,
     estimate: true,
     purpose: {
-      pl: "Ogniwa litowo-żelazowo-fosforanowe (LiFePO4) w rozmiarze 18650 — ok. 3,6 V na ogniwo po naładowaniu. Trzy w szeregu dają maks. ~10,8 V, co mieści się w zakresie QMX+ (6–12 V); z nowszym firmware radio akceptuje do 14 V, więc możliwy też pakiet 4S (~14,4 V). Bezpieczniejsza chemia i płaska krzywa rozładowania.",
-      en: "LiFePO4 cells in the 18650 size — about 3.6 V per cell when fully charged. Three in series give up to ~10.8 V, which fits the QMX+ supply range (6–12 V); with newer firmware the rig accepts up to 14 V, so a 4S pack (~14.4 V) is also an option. Safer chemistry and a flat discharge curve.",
+      pl: "Ogniwa litowo-żelazowo-fosforanowe (LiFePO4) w rozmiarze 18650 — ok. 3,6 V na ogniwo po naładowaniu. Trzy w szeregu dają maks. ~10,8 V, co mieści się w zakresie QMX+ (6–12 V); z nowszym firmware możliwy też pakiet 4S — ładuj go do 14,0 V, nie do pełnych 14,4 V. Bezpieczniejsza chemia i płaska krzywa rozładowania.",
+      en: "LiFePO4 cells in the 18650 size — about 3.6 V per cell when fully charged. Three in series give up to ~10.8 V, which fits the QMX+ supply range (6–12 V); with newer firmware a 4S pack is also an option — charge it to 14.0 V, not the full 14.4 V. Safer chemistry and a flat discharge curve.",
     },
   },
   {
     id: "battery-holder",
-    name: { pl: "Koszyk na ogniwa 18650", en: "18650 battery holder" },
+    name: { pl: "Koszyk 4S na ogniwa 18650", en: "4S 18650 battery holder" },
     category: "power",
     image: "https://i.imgur.com/HZboVFb.png",
     url: "https://pl.aliexpress.com/item/1005008650446020.html",
     pricePln: 15,
     weightG: 35,
     estimate: true,
-    note: { pl: "Potwierdź dokładny produkt", en: "Confirm the exact product" },
     purpose: {
-      pl: "Koszyk/obudowa na ogniwa 18650, dzięki któremu zbudujesz schludny, wymienny pakiet zasilający.",
-      en: "A holder/enclosure for the 18650 cells so you can build them into a tidy, swappable battery pack.",
+      pl: "Koszyk 4S na ogniwa 18650 — schludny, wymienny pakiet zasilający. Przy QMX+ ładuj do 14,0 V, nie do pełnych 14,4 V (3,6 V × 4).",
+      en: "4S holder for 18650 cells — a tidy, swappable battery pack. With the QMX+, charge to 14.0 V, not the full 14.4 V (3.6 V × 4).",
     },
   },
   {
@@ -338,8 +336,8 @@ export const GEAR: GearItem[] = [
     weightG: 90,
     estimate: true,
     purpose: {
-      pl: "Ładowarka z profilem LiFePO4. Używaj wyłącznie ładowarki dedykowanej do LFP — ładowarki Li-ion podają złe napięcie i uszkodzą te ogniwa.",
-      en: "A charger set to the LiFePO4 profile. Use only an LFP-specific charger — Li-ion chargers apply the wrong voltage and will damage these cells.",
+      pl: "Ładowarka z profilem LiFePO4. Używaj wyłącznie ładowarki dedykowanej do LFP — ładowarki Li-ion podają złe napięcie i uszkodzą te ogniwa. Przy pakiecie 4S ustaw końcówkę ładowania na 14,0 V, nie 14,4 V.",
+      en: "A charger set to the LiFePO4 profile. Use only an LFP-specific charger — Li-ion chargers apply the wrong voltage and will damage these cells. For a 4S pack, set the end-of-charge voltage to 14.0 V, not 14.4 V.",
     },
   },
 ];
